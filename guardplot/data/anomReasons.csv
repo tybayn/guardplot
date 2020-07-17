@@ -1,0 +1,9 @@
+sevh3,DoS attack,DDoS attack
+sevh2,DoS attack,DDoS attack,network is being probed
+sevh1,network is being probed
+sevl1,unknown reason
+sevl2,unknown reason
+sevl3,unknown reason
+sev0,network is being held,recording host system error
+glob,recording host system error
+nores,system is being held, system is currently off
