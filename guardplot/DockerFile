@@ -1,0 +1,24 @@
+FROM python:3.9-slim-buster as builder
+ARG DEBIAN_FRONTEND=noninteractive
+RUN python3.9 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH" VIRTUAL_ENV="/opt/venv"
+
+COPY requirements.txt .
+RUN pip --disable-pip-version-check install --no-cache-dir --upgrade pip && \
+    pip --disable-pip-version-check install --no-cache-dir -r requirements.txt
+
+RUN find /opt/venv -name '*.c' -delete && \
+ find /opt/venv -name '*.pxd' -delete && \
+ find /opt/venv -name '*.pyd' -delete && \
+ find /opt/venv -name '__pycache__' | xargs rm -r
+
+FROM python:3.9-slim-buster as runner
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PATH="/opt/venv/bin:$PATH" VIRTUAL_ENV="/opt/venv"
+
+RUN useradd --create-home guardplot
+USER guardplot
+
+COPY --chown=guardplot:guardplot --from=builder /opt/venv /opt/venv
+
+WORKDIR /home/guardplot
+COPY --chown=guardplot:guardplot . .

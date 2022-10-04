@@ -1,0 +1,7 @@
+argparse
+colorama
+pysqlite3
+configparser
+ipython
+pytz
+numpy

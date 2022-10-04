@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  guardplot:
+    stdin_open: true
+    tty: true
+    container_name: guardplot
+    environment:
+      PWD: $PWD
+    build:
+      context: ./guardplot
+      dockerfile: $PWD/guardplot/DockerFile
+    command: bash -c "python3 utils/generate_data.py && python3 dbbuilder/dbbuilder.py -a && bash"
