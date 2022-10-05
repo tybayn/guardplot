@@ -1,1 +1,688 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link rel="icon" href="assets/images/favicon.ico">
+<title>Ty Bayn | GuardPlot</title>
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Highlight Syntax -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/color-purple.css" />
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+      <div class="container-fluid">
+        <!-- Sidebar Toggler -->
+		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
+		
+		<!-- Logo --> 
+        <a class="logo ml-md-3" href="https://tybayn.github.io"> <img src="assets/images/black-icon-logo.png" alt="Zero-Network Logo" height="60px"/> </a> 
+		<span class="text-2 ml-2">v1.0</span> 
+        <!-- Logo End -->
+        
+		<!-- Navbar Toggler -->
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================ -->
+  <div id="content" role="main">
+    
+	<!-- Sidebar Navigation
+	============================ -->
+	<div class="idocs-navigation bg-dark docs-navigation-dark">
+    <ul class="nav flex-column ">
+      <li class="nav-item"><a class="nav-link active" href="#project">GuardPlot</a></li>
+      
+      <li class="nav-item"><a class="nav-link active" href="#start">Getting Started</a>
+        <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link" href="#installation">Installation</a></li>
+          <li class="nav-item"><a class="nav-link" href="#prerequisites">Prerequisites</a></li>
+          <li class="nav-item"><a class="nav-link" href="#docker">Running in Docker</a></li>
+          <li class="nav-item"><a class="nav-link" href="#how_to">Using Guardplot</a></li>
+          <li class="nav-item"><a class="nav-link" href="#adding_data">Adding Data</a></li>
+          <li class="nav-item"><a class="nav-link" href="#building_the_database">Building the Database</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a class="nav-link active" href="#intro">About the Project</a>
+        <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link" href="#description">Project Description</a></li>
+          <li class="nav-item"><a class="nav-link" href="#design">Design Docs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#timeline">Timeline and Updates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#final">Final Product</a></li>
+          <li class="nav-item"><a class="nav-link" href="#demo">Video Demo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reflection">Reflection</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+    
+    <!-- Docs Content
+	============================ -->
+    <div class="idocs-content">
+      <div class="container"> 
+        
+        <section id="project">
+          <h1>GuardPlot</h1>
+          <h2>Anomaly Detection and Plotting Engine</h2>
+          <p class="lead">Southern Utah University Senior CAPSTONE Project (2020)</p>
+          <hr>
+          <div class="row">
+            <div class="col-sm-6 col-lg-4">
+              <ul class="list-unstyled">
+                <li><strong>Version:</strong> 1.0</li>
+                <li><strong>Author:</strong> <a href="https://www.linkedin.com/in/ty-bayn/" target="_blank">Ty Bayn</a></li>
+                <li><strong>Github:</strong><a href="https://github.com/tybayn/guardplot" target="_blank"> tybayn/guardplot</a></li>
+                <li><strong>Languages:</strong> python3, sql</li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <ul class="list-unstyled">
+                <li><strong class="font-weight-700">Created:</strong> 2020-04-01</li>
+                <li><strong>Update:</strong> 2022-10-03</li>
+                <li><strong class="font-weight-700">License:</strong><a href="https://choosealicense.com/licenses/mit/" target="_blank"> MIT</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <hr class="divider">
+
+        <section id="start">
+          <h2>Getting Started</h2>
+        </section>
+
+        <section id="installation">
+          <h3>Installation</h3>
+          <p>Clone or fork <a href="https://github.com/tybayn/guardplot" target="_blank">tybayn/guardplot</a> to your local machine. Extract the files if necessary.</p>
+          <p>If not using Docker, use pip to install all the libraries listed in 'requirements.txt'</p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="prerequisites">
+          <h3>Prerequisites</h3>
+          <h4>File Structure</h4>
+          <p>Ensure that the following file structure is maintained and files are created:</p>
+          <pre><code class="shell">./
+|
+└──guardplot
+|  |
+|  └──data
+|  |  |  anomReasons.csv
+|  |
+|  └──dbbuilder
+|  |  |  dbbuilder.py
+|  |
+|  └──example_data
+|  |
+|  └──utils
+|  |  |  __init__.py
+|  |  |  generate_data.py
+|  |  |  gsclasses.py
+|  |  |  gslink.py
+|  |
+|  |  config.ini
+|  |  DockerFile
+|  |  guardplot.py
+|  |  requirements.txt
+|
+|  docker-compose.yaml
+          </code></pre>
+          <h4>anomReasons.csv</h4>
+          <p>The anomReasons.csv file needs to exist for the program to have enough data to run. Below is the default contents, once values are determined for each severity level, they can be added to the file.</p>
+          <pre><code class="shell">
+sevh3,dos attack,ddos attack
+sevh2,dos attack,ddos attack,network is being probed
+sevh1,network is being probed
+sevl1,unknown reason
+sevl2,unknown reason
+sevl3,unknown reason
+sev0,network is being held,recording host system error
+glob,recording host system error
+nores,system is being held,system is currently off
+          </code></pre>
+          <h4>Configuration File</h4>
+          <p>In the guardplot/ directory is the config.ini file that contains the following lines (the attributes are set to defaults):</p>
+          <pre><code class="shell">
+[database]
+import = data/example_data
+database = data/HostData.db
+
+[anomalies]
+logs = data/anomLogs.csv
+reasons = data/anomReasons.csv
+          </code></pre>
+          <p>This is to set the file locations that are used by the program. Altering these will alter where the files are located.</p>
+          <ul>
+            <li>import: The directory that contains the json files that need to be read into the database</li>
+            <li>database: The location of the database file used by the software</li>
+            <li>logs: The location of the anomaly logs recorded by the software</li>
+            <li>reasons: The best guess of the software as to the reasons behind anomalies</li>
+          </ul>
+          <h4>Input Data</h4>
+          <p>The code is set up to read through all directories with the date format "YYYY-mm-dd" as the names, with each containing a series of json files that contain logs for times throughout that date. The dbbuilder.py software reads in the json formatted data, preprocesses it, and saves it into a sqlite3 database.</p>
+          <p>The Database reader is expecting the following json structure for each event:</p>
+          <pre><code class="json">
+[
+  {"host":"host_name_1","events":5,"date":"2022-10-03","epoch":1664820000},
+  {"host":"host_name_1","events":1,"date":"2022-10-03","epoch":1664823600},
+  ...
+]
+          </code></pre>
+        </section>
+
+        <hr class="divider">
+
+        <section id="docker">
+          <h3>Running in Docker</h3>
+          <h4>Starting the Docker Container</h4>
+          <p>Bring up the project by running the following command in the terminal in the root of the project:</p>
+          <pre><code class=shell>sudo -E docker-compose up --build</code></pre>
+          <p>During the building processes, example data simulating 90 days of events for 30 hosts is loaded into 'example_data' and the sqlite3 database is loaded with that example data. All the needed python libraries (listed in requirements.txt) are also installed into the image.</p>
+          <p>Once the container is running, exec into the "guardplot" container:</p>
+          <pre><code class=shell>sudo docker exec -it guardplot bash</code></pre>
+        </section>
+
+        <hr class="divider">
+
+        <section id="how_to">
+          <h3>Using Guardplot</h3>
+          <p>Once the database is created, populated, and all data analyzed, you can start your analysis of the data using the guardplot.py software. The Usage is below:</p>
+          <pre><code class=shell>
+usage: GuardPlot.py [-h] [-a] [-g] [-i IP [-o | -d DATE | -l -e EVENTS [-p PREVIOUSEVENTS] -t TIME]]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -a, --anomaly-view    displays details about anomalies rather than a plot
+  -g, --global          performs global anomaly detection
+  -i IP, --ip IP        evalute the given ip address
+  -o, --overall         if ip is provided, view daily stats from last 33 date entries
+  -d DATE, --date DATE  if ip is provided, evaluate the given date
+  -l, --live            if ip is provided, performs live anomaly detection, event and time required
+  -e EVENTS, --events EVENTS
+                        when in live mode, evaluate the live data point
+  -p PREVIOUSEVENTS, --previous-events PREVIOUSEVENTS
+                        when in live mode, evaluate the data point compared to previous data point
+  -t EPOCH, --time EPOCH
+                        when in live mode, provide an epoch for comparison
+          </code></pre>
+        </section>
+
+        <hr class="divider">
+
+        <section id="adding_data">
+          <h3>Adding Data</h3>
+          <p>Once you are ready to load your own data, place your correctly formated files within the projects and update the 'config.ini' to reflect the location of your data. Then rerun the 'dbbuilder.py'.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="building_the_database">
+          <h3>Building the Database</h3>
+          <p>In the case that you want to preload your own data into the database, place your data files into the correct location and change the path in 'config.ini'. Once the files are in place, use the dbbuilder.py program to rebuild the database:</p>
+          <pre><code class=shell>
+usage: dbbuilder.py [-a] [-s] [-h]
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -a, --all-reload   reload all entries in the database
+  -s, --stat-reload  reload all stats in the database
+          </code></pre>
+          <p>This will construct a database with the following tables:</p>
+          <ul>
+            <li>LOGS: The raw data from the Json</li>
+            <li>INDVSTATS: Contains the analysis and stats of each log entry</li>
+            <li>DAILYSTATS: Contains the analysis and stats for each day of each host</li>
+            <li>OVERALLSTATS: Contains the analysis and stats for each host for all time</li>
+          </ul>
+          <p>NOTE: Using the command without any parameters will load any not included data from the Json resource and update the tables (the OVERALLSTATS table is completely recalculated).</p>
+          <ul>
+            <li>Using the [-a] parameter will drop all tables and recreate the database.</li>
+            <li>Using the [-s] parameter will drop all stats entries in the database and recalculate them</li>
+          </ul>
+          <p>The conversion of Json into sqlite3 is incredibly fast; however, the actual analysis performed on each and every data point is not. On average expect this process to take 6-10 hours to complete for the very first time use. After that the database is simply updated and shouldn't take long if done routinely (recommended everytime logs are recieved).</p>
+        </section>
+        
+      <hr class="divider">
+
+      <section id="intro">
+        <h2>About the Project</h2>
+        <p>This next section is the documents and research done regarding the project required by the University (literally, all of it). So unless you enjoy walls of text and what essentially amounts to journal entries, then you are good to leave at this point!</p>
+      </section>
+		
+        <section id="description">
+          <h3>Project Description</h3>
+          <p>For my project I will be completing a Python Application for GuardSight, Inc. This application is to look over historical data of hosts and be able to find  anomalies in the data such as hosts that have gone down, hosts that are reporting higher amounts of attacks against them as compared to their average report in the past, hosts that fail to report as often as they have historically, and any other anomalies that are detected in the data when compared to a host’s historical averages.</p>
+          <p>The application will also need to be able to scan data live when a report comes in and compare it to historical values and alert if a particular anomaly has been determined to exist on the reporting host. This alert can then trigger an investigation or action for that host.</p>
+          <p>This application should be able to be run on a terminal so that it can be run on a server directly through ssh or remote connection. Eventually this application should have the ability to create visuals, graphically and/or terminally based, to view the trends in hosts over time.</p>
+          <p>GuardSight, Inc. has described the project as using historical data to determine inconsistencies and anomalies in the data a particular host reports, then using that knowledge to write an application that can detect those same inconsistencies and anomalies for hosts live.</p>
+          <p>A portion of this project will require the research of what kinds of network events will cause what types of anomalous data from hosts. Using this will allow the software to make a best guess of what is happening when a host responds in an unexpected way. With this knowledge, either an application or a team of people may be able to respond faster with a more correct response. For example, a server restart or a network attack may return similar anomalous data for the host, but we don’t need to send an alert if a server is restarting.</p>
+          <p>In order to complete this project, I will need to research Data Analysis and algorithms for distance, frequency, and time. These algorithms will form the base for this project and my understanding of how they work and their application is vital to my ability to complete this project effectively. I will also need to research and refresh on statistical analysis in order to determine the standard deviations of a set of historical data, and how to adjust those values live as historical values are added to over time.</p>
+          <p>This application will be written in Python 3. Having never used the language, I will need to learn how to develop and run applications in Python for both Linux and Windows operating systems. I will be spending the time to research the basics of Python, as well as the Data Science and Data Visualization applications of Python.</p>
+          <p>This program will challenge me to try multiple fields that I have not used before, such as Data Science and Python. But it will also utilize skills I have learned during my time in school such as advanced algorithms, object-oriented programming, data bases/Json, and patterns-based programming to name a few.</p>
+          <h4>Objectives:</h4>
+          <p>Overall, this project is to provide a way for anomalous data to be detected from historic data and use that historical data to determine those same anomalies on hosts as they send in data.</p>
+          <ul>
+            <li>Main Objectives:</li>
+            <ul>
+              <li>Learn to develop and run Python 3 applications in Linux via the terminal since the server may not have a graphical desktop (remote connection may or may not be terminal based)</li>
+              <li>Analyze the data set to find historical anomalies in the data</li>
+              <li>Research how best to compare live data to historical data quickly without the need to read through all the data bases every time a report comes in</li>
+              <li>Research and associate what kinds of network events may cause anomalies in host responses and find a way to differentiate between them</li>
+              <li>Research the strengths and usages of potential algorithms for analyzing frequency and time within the data</li>
+              <li>Research the applicable topics of statistical analysis that will be used in analyzing the data</li>
+              <li>Create a Python application that can scan the data and report those anomalies from the historical data along with possible causes</li>
+            </ul>
+            <li>Secondary Objectives:</li>
+            <ul>
+              <li>Create a Python application that can scan most recent host reports, compare them to historical reports, and report anomalies</li>
+              <li>Allow the Python program to be called from the software that controls the data. (This means implementing command line args)</li>
+              <li>Have the Python application log a history of anomalies</li>
+            </ul>
+            <li>Tertiary Objectives:</li>
+            <ul>
+              <li>Allow the Python application to create and show terminal friendly graphical representations of the data</li>
+              <li>Allow the Python application to create and save graphical representations of the data (not necessarily terminal or ssh friendly)</li>
+              <li>Create a live visual tracker in Python3 (for Linux with graphical desktop) to see the trends in reports and live reports for a given host of interest</li>
+            </ul>
+          </ul>
+          <h4>Estimated Timeline:</h4>
+          <p><u>Jan 29 - Jan 25</u></p>
+          <ul>
+            <li>Begin learning Python3 syntax:</li>
+            <ul>
+              <li>Standard syntax, loops, defs, dictionaries, file reading, json files</li>
+            </ul>
+            <li>Become familiar with the data set, what it includes, and how best to analyze it</li>
+            <li>Research statistical Python libraries</li>
+            <li>Create example Python projects to test out what I have learned</li>
+          </ul>
+          <p><u>Jan 26 - Feb 1</u></p>
+          <ul>
+            <li>Continue learning Python3:</li>
+            <ul>
+              <li>Multithreading, automatic start, command line arguments, piping, storing data temporarily for fast access.</li>
+            </ul>
+            <li>Research fast and efficient ways to read in 2GB+ of json data in Linux, is Python the fastest?</li>
+            <li>Create example Python projects to test what I have learned</li>
+          </ul>
+          <p><u>Feb 2 - Feb 8</u></p>
+          <ul>
+            <li>Begin structure of data-read-in code, must not take longer than 10 seconds to read in data from the first time, once read in, the data must be stored in local fast access files (.tjson)</li>
+            <li>Program at this point will accept an IPv4 address, gather the data from the json database, and display the average number of events and the standard deviation for that host</li>
+          </ul>
+          <p><u>Feb 9 - Feb 15</u></p>
+          <ul>
+            <li>Feb 14 is the last day for any major changes to the project</li>
+            <li>Continue working on speed for reading in data (consider new storage method) if needed</li>
+            <li>Research statistical analysis and learning that can be applied to this data</li>
+            <li>Create example Python projects to test statistical analysis</li>
+          </ul>
+          <p><u>Feb 16 - Feb 22</u></p>
+          <ul>
+            <li>Apply statistical analysis code to main program</li>
+            <li>Research types of network events and how they affect network devices</li>
+            <li>Program at this point will report any anomalies in a given host's historical data</li>
+          </ul>
+          <p><u>Feb 23 - Feb 29</u></p>
+          <ul>
+            <li>Continue research on causes for anomalous data, including power loss or down time</li>
+            <li>Associate normal activity and time of day for better predictions</li>
+            <li>Begin adding anomaly detection and possible cause to main program</li>
+          </ul>
+          <p><u>Mar 1 - Mar 7</u></p>
+          <ul>
+            <li>Continue anomaly detection code if needed</li>
+            <li>Allow pipe or command line input of a json entry to begin live data comparison and live detection</li>
+            <li>Add new data to temp data for faster and better history retrieval</li>
+            <li>Research storing history of anomalies for a host</li>
+            <li>Program at this point will be able to report specific anomalies in a given host's historical data</li>
+          </ul>
+          <p><u>Mar 8 - Mar 14</u></p>
+          <ul>
+            <li>Apply creating history of anomalous data</li>
+            <li>Finalize application of reading in live data</li>
+            <li>Begin application of updating temp data (how and when)</li>
+            <li>Program at this point will be able to report anomalies of live data as compared to historical data, the possible causes, and create a history of that host's anomaly history</li>
+          </ul>
+          <p><u>Mar 15 - Mar 21</u></p>
+          <ul>
+            <li>Spring break</li>
+            <li>Will use this time to catch up if needed</li>
+          </ul>
+          <p><u>Mar 22 - Mar 28</u></p>
+          <ul>
+            <li>Begin porting application to Windows, ensure that json data can still be read in in a new environment</li>
+            <li>Research graphical and terminal visualization of data</li>
+            <ul>
+              <li>Graphical for Windows</li>
+              <li>Terminal based for Linux</li>
+            </ul>
+            <li>Create example Python projects to test visualization</li>
+            <li>Program at this point will work on both Linux and Windows</li>
+          </ul>
+          <p><u>Mar 29 - Apr 4</u></p>
+          <ul>
+            <li>Ensure the program works with the GuardSight, Inc. system (mainly folder and file paths)</li>
+            <li>Apply visualization to main program</li>
+            <li>Start reports</li>
+            <ul>
+              <li>Algorithm and process report for GuardSight, Inc. (private)</li>
+              <li>Standard report of Capstone an project for Southern Utah University</li>
+            </ul>
+            <li>Program at this point will be complete</li>
+          </ul>
+          <p><u>Apr 5 - Apr 11</u></p>
+          <ul>
+            <li>Deliver code and report to GuardSight, Inc.</li>
+            <li>Help setup program at GuardSight, Inc. if necessary</li>
+            <li><i>Capstone project complete</i></li>
+          </ul>
+          <p>The above depicts the expected timeline and design requirements. The actual timeline and design documents are outlined in the following sections.</p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="design">
+          <h2>Design Docs</h2>
+          <h3>Basic Research</h3>
+          <p>One of the more major segments of the project is to analyze the data that was given to me by GuardSight and find ways to detect anomalies in the data, what ever those may be. The article entitled ‘5 Ways to Detect Outliers/Anomalies That Every Data Scientist Should Know (Python Code)’. This article discusses five different ways to detect anomalies and outliers in data, what they could possibly mean, and how to implement that type of analysis using python code. This will be a great asset to my project once I start needing to implement ways to detect anomalies and outliers in the data given to me, and it is a nice plus that the article has example python code that I can use to give me a base on how I want to implement my detection.</p>
+          <p><i>Badr, W. (2019, April 12). 5 Ways to Detect Outliers That Every Data Scientist Should Know (Python Code). Retrieved from https://towardsdatascience.com/5-ways-to-detect-outliers-that-every-data-scientist-should-know-python-code-70a54335a623</i></p>
+          <p>One of the best ways to understand the data is to view it graphically. While I was not able to find a software that I liked entirely and will likely have to make my own, I found a resource that has a lot of ideas and parts that could be used as inspiration. The Python library “visidata” contains lots of dynamic and colored graphs and tools for the linux terminal that I could use to build an ideal software for the data at hand.</p>
+          <p><i>Pwanson, S. (n.d.). VisiData. Retrieved from https://www.visidata.org/</i></p>
+          <p>I am currently taking a Big Data analytics class as SUU. In this class the required reading includes many valuable lessons and resources on how to analyze large amounts of data. I have been using some of the ideas in the book already to configure temporary databases and how they should be maintained. I also plan to use this resource when I start working on statistical analysis. It gives a good overview of different kinds of analysis and how to apply them.</p>
+          <p><i>Sharda, R., Delen, D., & Turban, E. (2018). Business intelligence, analytics, and data science a managerial perspective (4th ed.). Boston: Pearson.</i></p>
+          <p>After meeting again with GuardSight, it was determined that we would need to create an alternate database structure to hold the data so it can be read in faster through the use of Python rather than Linux commands. We agreed that SQLite would be the best option. I will be using the website called “Tutorials Point” to learn how to install SQLite3 onto Linux and how to address the database from Python.</p>
+          <p><i>SQLite - Installation. (n.d.). Retrieved February 24, 2020, from https://www.tutorialspoint.com/sqlite/sqlite_installation.htm</i></p>
+          <p>The entirety of my project is written in Python, which is a language that I have had very little experience with. As such I have needed to be able to learn the basics of the language, as well as a few other tidbits of knowledge in order to program effectively. The majority of my python learning has come from the ‘Automate the boring stuff with Python’ book by Sweigart. I have been using the lessons taught in this book to create and try different python projects, and ultimately applying it to create the analysis software for my capstone project.</p>
+          <p><i>Sweigart, A. (2015). Automate the boring stuff with Python: practical programming for total beginners. San Francisco, CA: No Starch Press, Inc.</i></p>
+          
+          <h3>Plotter Design:</h3>
+          <img src="assets/images/plotter.png"/>
+          <p>The above image shows what the plotter engine produces when looking at a single day's data.</p>
+          <img src="assets/images/plotter2.png"/>
+          <p>The above image shows the idea and execution of live anomalies being detected using command line arguments.</p>
+          <img src="assets/images/plotter3.png"/>
+          <p>The above image shows the anomaly detail view of events that occur in the data.</p>
+
+          <h3>Initial Thoughts:</h3>
+          <p>My first thoughts are that this project is very interesting and I am learning a lot about python, data management, temporary files, multi-threading, read-in times, and statistical analysis. I have been able to apply what I have learned so far, and I am making a lot of progress. I am enjoying the project, but I feel there are small things here and there that are causing some issues with the end product. The first is reading in data in the form it is currently is incredibly slow, and Python is not great at reading in that much data at once. I have been able to get it to work super quickly in Linux using a system call out to grep, but with the need to be multiplatform I am needing to find a way to do it solely in Linux.</p>
+          <p>I have been doing some research on how to do this, and without downloading large packages to handle it, I think I will need to create a middle man / temp database that can store certain amounts of data for when the data is needed quickly. Otherwise I suppose it is fine if the program takes some time.</p>
+          <p>I also feel I need to spend some more time with the client asking about the data set. I feel I understand the dataset pretty well, but there is a single detail I am not sure on. I’m not sure if a host is reporting all events since the last boot, or if it reporting all events since the last report. This clarification will alter how I continue with the project and how I analyze the data.</p>
+          <p>Overall, the project is going extremely well and I haven’t run into many roadblocks other than those listed above. I am on track to finish what I need to by the timeline I have set for myself. As far as improvements, I need to start checking in with GuardSight, Inc. frequently not only for testing, but to make sure the software will work with the system in the way they are envisioning it, just so I don’t get super far along and then realize it won’t work. This hasn’t been an issue yet since a lot of my time thus far is just analyzing historical data and writing basic scripts. But starting here in the next two weeks I will need to start that weekly communication.</p>
+        
+        </section>
+
+        <hr class="divider">
+
+        <section id="timeline">
+          <h2>Timeline and Updates</h2>
+          <p><u>2020-01-22</u></p>
+          <ul>
+            <li>I started learning Python3 for Linux, wrote example code to learn basics, researched fastest way to retrieve data from a Json database (grep is infinitely faster than Python), started writing main program segments to test parts, researched mean and standard deviation for a sample of Python data, learned to read Json into Python as a dictionary array. In the processes of testing loading JSON data, I found that reading all data in via Python and then searching for the host is ill advised. It takes close to an hour to read in the data, and most times the server would crash. I found that using Linux's 'grep' to locate and print the data into a temp database file and then read that temp file in is much faster, usually taking no more than 10-20 seconds. To reduce time in the future, if a tempDB (.tJson) file is not found for a host, the software will run a Linux shell command from Python to create the file, and then read that file in. If the file already exists, then it just reads the tJson file instead. This implies that the software will have a full search mode and a quick search mode, where the full search will recreate the .tJson file to update it, while the quick mode will simply read the existing .tJson if it exists.</li>
+          </ul>
+          <p><u>2020-01-29</u></p>
+          <ul>
+            <li>I started researching different ways to read in Json data. There were a lot of options that included external libraries, but in the interest of using the barebones of Python I decided to stick with the built in libraries. I tried multiple points to try get the data read in, but ultimately decided on the following:</li>
+            <ul>
+              <li>The read in needs to multithreaded</li>
+              <li>The read in needs to have each thread focus on one date file</li>
+              <li>The read in needs to be in Python and not a system call to grep, this way it can work cross system</li>
+              <li>Json needs to be streamed</li>
+            </ul>
+            <li>Following this idea, I researched how to construct threads within Python. I ultimately created a Python class that extends the Thread class so that I can pull the Json data object from the thread once it joins back and place it in the central Json data variable. I also think that only pulling 30 days of data would be beneficial for the follow reasons:</li>
+            <ul>
+              <li>Reading the full Json database in Python takes 33 seconds while grep takes 5 seconds</li>
+              <li>Trends change over time, if a host is more active in the last month, then we want to consider that as normal</li>
+              <li>From my research into Big Data analysis (my Big Data class), the temporary DB for hosts is a good idea, and only holding 30 days worth of data per host will save space over time, and then every 7 days reconstruct those temp files so that it is always up to date</li>
+            </ul>
+            <li>This doesn't mean that there shouldn't be the ability to read all the data in, but that needs to be reserved for the not live version of the app since it will take a few minutes per host to read and analyze all of its data, especially as the amount of data grows continuously.</li>
+            <li>I also spent the time to continue learning Python. I learned how to create classes, how to extend classes, how to use date times, how to analyze directories, the proper form for constants, and how to set timers. I used the timer functions to create a way to see how long it takes to read in data. To read in the full DB data for a host via grep is 5.18 s, to read the full DB in for a host via Python is 33.01 s, and reading in 30 days worth of data for a host via Python is 5.33 s.</li>
+          </ul>
+          <p><u>2020-01-30</u></p>
+          <ul>
+            <li>I started researching piping into the Python project. The process of piping is rather simple and easy to parse. This way I can pipe in an ip itself, or I can pipe an entire Json entry in. What I figure is I can do the following:</li>
+            <ul>
+              <li>​If no pipe or com arg: Ask for IP, do full historic scan</li>
+              <li>If only ip arg or only IP pipe: Use IP to do full historic scan</li>
+              <li>​If Json is piped: Run a fast analysis, use the temp data base or grab only 30 days of data for a fast scan</li>
+            </ul>
+            <li>I also added comments to the code I have completed and simplified the defined methods. The program at this point allows for input and grabs the actual data, temp data is created, and displays average and standard deviation.</li>
+            <li>Note: I might add the ability to pipe in or add a file name from command line for live analysis of all Json entries in that file.</li>
+          </ul>
+          <p><u>2020-02-08</u></p>
+          <ul>
+            <li>I added in the ability to read an entire Json file for comparisons. Usage: Once a Json file is created, you can pipe that file name into the software and it will run a quick analysis on every host in the file.</li>
+            <li>Note: It takes an incredibly long time to do this without the use of the .tJson files. This means that the .tJson files are critical to the performance of the software. I will need to change how the .tJson files get repopulated, it is not worth the time to only refresh every 7 days. This could greatly slow down performance. I will likely need to just keep a 30 day queue, when a new entry comes in, add it to the .tJson file and drop the oldest entry. This way the temp files are always up to date and never need to pull from the full database unless absolutely necessary. I will work on this next.</li>
+            <li>I will also consider the possibility of creating a separate Python script to prepare the temp data base the very first time.</li>
+            <li>The program at this point will accept an IPv4 address, gather the data from the Json database, and display the average number of events and the standard deviation for that host.</li>
+          </ul>
+          <p><u>2020-02-11</u></p>
+          <ul>
+            <li>The goal today was to get two things fixed.</li>
+            <ul>
+              <li>Get the temp files to auto rotate data every time a new entry is input, which is now does. When a new entry is detected, it will leave off the oldest entries, and add on the newest entry (as long as it is not a duplicate)</li>
+              <li>I clarified with GuardSight that the "events" number is not per report, it reports the total number of events since the last day or reboot (reports reset to 0 at 0 hours). This means I had to make sure that I was looking at the span between reports as the number of events.</li>
+            </ul>
+            <li>This leaves a number of odd things that need to be considered. I may need to consider the time between reports, this way a 2 hour gap is broken down versus a 15 minute gap. I will also need to consider the option of comparing data to only the data from the same time each year. I am hoping to get an up-to-date data set at the next meeting. This way I can work on the newer data so that my messed up fake data is replaced.</li>
+            <li>Also, I will need to create a separate Python script to create the entire temp database for first time use. This will save a lot of time in the future. If a new host is created the existing program will take care of it. Creating a single new file takes only 5-8 seconds, which is fine if its few and far between, but even creating the temp files for a single report Json can take many hours.</li>
+          </ul>
+          <p><u>2020-02-17</u></p>
+          <ul>
+            <li>I have been researching different types of terminal plots, and I have not been able to find any that I believe will work well for what will be needed. I will be designing and implementing my own.</li>
+            <li>While implementing this plotter, I noticed that August 2019 data was extremely odd and out of standard range. This was near the beginning of the data entries, but the data seemed odd for a couple of days. I'm not sure why the values didn't reset back to 0, but I will be talking to GuardSight about these anomalies.</li>
+            <li>I was able to complete the new visualization software for now. It shows the data from the current time back a couple of days (depending on the length of the plot). It will show the AVG and STD DEV of both the overall data and the current display data. The entries are color coded, white is within range, yellow is within at least one of the std devs, and red is outside of both std devs. For testing I have the data being read in via Linux grep... I think I may need to discuss options with GuardSight as Grep literally takes seconds to run and is much faster than Python reading in the data alone.</li>
+            <li>This new visualization software in conjunction with the standard software is able to detect anomalies as far as being out of the std devs.</li>
+            <li>This has led me to begin thinking about algorithms to detect anomalies and when to report them. Using visualizations and the comparisons of a set amount of time vs all time gives us a good idea of what may indeed be too high or too low. This basic algorithm will likely be the start of all algorithms finding anomalies.</li>
+          </ul>
+          <p><u>2020-02-18</u></p>
+          <ul>
+            <li>I really like the way the visualization software ended up working. I have decided to keep the Linux commands for the nature of speed. I want to make this the starting point for the historical analysis, and allow the user to choose an IP, then select a date they want to view. I have mapped out the stages/phases that will be implemented.</li>
+          </ul>
+          <p><u>2020-02-19</u></p>
+          <ul>
+            <li>I made some major changes to the visualization software. I got the plot fitted and all the screens necessary for it to work as intended. I have learned a lot about the data set, and I have found that the original algorithm to detect anomalies may need to be altered. We may also need to do anomaly testing in two cases: (1) the day; and (2) the day compared to overall. There is definite room for improvement, but I feel better about where this part of the project is at. I will be meeting with GuardSight on Thursday 2/20/2020 to show what has been done, and at this point I feel I will be able to discuss what needs to be detected with better familiarity with the data.</li>
+          </ul>
+          <p><u>2020-02-20</u></p>
+          <ul>
+            <li>I met with GuardSight today. We looked over what was done already, we redefined some of the objectives, and discussed certain things that need to be done. I have created a revised contract that I will need to be approved by both GuardSight and Dr. Cantrell.</li>
+            <li> will need to implement a SQLite database for storing the data so that it can be accessed faster. We also discussed the algorithms and that distance is not a concern. I will need to go back make sure that the program accepts command line arguments.</li>
+          </ul>
+          <p><u>2020-03-11</u></p>
+          <ul>
+            <li>I started to break things into multiple parts. I started and completed the Python script that reads all of the Json data into a new SQLite3 database. I am happy to report that it is much more efficient and faster.</li>
+            <li>I also had to research how to read in command line args for Python. I think I have settled on the built in Python library "argparse". This makes it easy and I will plan to use it for all other commands.</li>
+            <li>I also started the separation of the data reader and GuardPlot. This way GuardPlot can call the reader and not have to be changed, only the reader if the database format or type changes.</li>
+            <li>Overall, today I completed the new SQLite3 database implementation and Python script to read data in efficiently and with control.</li>
+          </ul>
+          <p><u>2020-03-11</u></p>
+          <ul>
+            <li>I continued working on the read in portion and got that far enough along for testing. I also made sure that the data being pulled from the database matches the Json pulls from the old version. Good news, they match.</li>
+            <li>I also changed how colors are handled in the graphical format. It does a full analysis of all points as its writing data. Instead of assigning colors based on graphical boundaries, I write those colors based on actual analysis. This means the number of anomalies on the date screen matches the number of red values on the graph</li>
+            <li>As far as what needs to be done by Thursday:</li>
+            <ul>
+              <li>Allow for command line args for the main program</li>
+              <li>Allow the user to view a graph of all time (or last 96 days) where each point is a day and represents the average for that day.</li>
+              <li>When an anomaly is found, find a way to compare it to other hosts to determine if everyone experienced the same anomaly (GuardSight's end) or if it is unique to the host (Host's end).</li>
+            </ul>
+          </ul>
+          <p><u>2020-03-16</u></p>
+          <ul>
+            <li>After working on some of the analysis steps, I've determined that the single table with logs will not be sufficient enough to do an on the fly analysis. I decided to open up the loadDB.py file again and add more functionality. I added 3 more tables that once the initial logs are loaded into the database, analysis is performed on all the hosts so that we can quickly access statistics for any host without having to do an on the fly analysis. However, while this does save a tremendous amount of time while the code is running, the initial setup of the database can take close to 10 hours to populate for the very first use. After the first use it doesn't take nearly as long to add new data since the analysis on previous data is already complete. The tables for analysis are as follows:</li>
+            <ul>
+              <li>LOGS<br>
+                -host<br>
+                -events<br>
+                ​-date<br>
+                ​-epoch</li>
+              <li>INDVSTATS (new stats for every entry)<br>
+                -host<br>
+                -d_events (since events is cumulative)<br>
+                -is_reset (determines if a reset occured at the time)<br>
+                -date<br>
+                ​-epoch</li>
+              <li>DAILYSTATS (stats for a host on a specific date)<br>
+                -host<br>
+                -low (avg - stddev)<br>
+                -avg (average number of events for a given date)<br>
+                -high (avg + stddev)<br>
+                -stddev<br>
+                ​-date (based on epoch)</li>
+              <li>OVERALLSTATS (stats for a host overall)<br>
+                -host<br>
+                -low (avg - stddev)<br>
+                -avg (average number of events for a given date)<br>
+                -high (avg + stddev)<br>
+                -stddev</li>
+            </ul>
+            <li>This takes a long time to test since it takes 10 hours to populate the stats tables (reading in all logs simply takes 2-3 minutes from a hdd). None of the run time is being counted in the total hours. I cannot progress on this until the data base is in place.</li>
+            <li>The reason for this change is because one of the anomaly detection tests we want to do is to see if other hosts are reporting similar anomalous data at the same epochs. In order to do that quickly we need to have the statistical analysis already done, or it could take up to 45 minutes per anomaly detected, or multiple hours to display one graph.</li>
+            <li>It is also an important change since we want to eventually do live analysis of data as it comes in. In order to report if a data point is truly anomalous, we need that fast access to the statistics. At this point, once testing is over, we will have a working database and the loader script will be complete.</li>
+          </ul>
+          <p><u>2020-03-17</u></p>
+          <ul>
+            <li>Outside of waiting for the Database to either work or fail, I was simply debugging errors as they appeared.</li>
+          </ul>
+          <p><u>2020-03-18</u></p>
+          <ul>
+            <li>The database is actually finally done. After much toil and time watching it succeed until the very end, we finally have a working database with all of the data we need. The focus I did today was to get the classes made and the link to the database complete. A lot of the code in these relied on coming up with ways of find anomalies in different ways.</li>
+            <li>As has been the case since the beginning, a severe anomaly for a given point is determined by comparing it to the overall std devs and daily std devs. In addition to these I had to determine the ideas behind two other anomalies.</li>
+            <li>The first is global anomalies (the purpose behind the really slow database build). A global anomaly is determined by checking the number of anomalies reported by every host for a given epoch, if over 70% of those are also anomalous, we determine the point to be globally anomalous.</li>
+            <li>The second is daily anomaly, or if a given daily overall is anomalous. It is moderately anomalous if the avg events for the day are outside of the overall std devs. It is severely anomalous if the data is moderately anomalous in addition to over 30% of that days points being anomalous as well.</li>
+            <li>This has all been implemented and the classes and links are done.</li>
+            <li>The biggest challenge today was dst. After some research I was able to determine what time zone and dst a given epoch has, which wasn't too bad. But the hardest part is epochs that occur as daylight savings switches, which either means two epochs result in the same time, or a given epoch maps to a time that doesn't exist (I feel this is an oversight in the time zone libraries for Python). But everything at this point works. Tomorrow I need to update the driver.</li>
+          </ul>
+          <p><u>2020-03-19</u></p>
+          <ul>
+            <li>Today I worked on the driver. The driver now communicates with the DBlinker. I got it working with the new backend and allowed for command line arguments and the ability to see global anomalies on the graph. Overall, everything is working well, and it is more visually pleasing. All I think I have left to do is the following 4 items:</li>
+            <ul>
+              <li>Be able to view a month at a time, globally, with each point as the avg of a day</li>
+              <li>Show lists of anomalies and possible causes rather than plots (not sure if this will be a com arg or a toggle-able var in the program.</li>
+              <li>Be able to determine the anomality of a live data point</li>
+              <li>Fix/allow time gaps in the plot. (This is a must be done before the others).</li>
+            </ul>
+          </ul>
+          <p><u>2020-03-28</u></p>
+          <ul>
+            <li>I started working on the last couple of items that are on the list of things that needed to be done. We got the gaps figured out for the most part (DST is still causing some issues). And I started working on live anomaly detection.</li>
+            <li>The live anomalies are compared to other data points from the same time of day from the same host, but not compared to the overall events since the delta events is not known for the event. This means there was no clear way to do the analysis compared to the overall data. I also wasn't able to sort the data coming from the database query since live analysis needed to be fast and sorting the result took too much time. 1-2 seconds doesn't seem like a lot of time, but when its for 1400 hosts at once, it adds up pretty quick.</li>
+            <li>Regardless, some form of live analysis is complete. If I have time I would like to revisit the idea.</li>
+            <li>I then worked on the list view of the anomalies rather than the graph view. This just allows for a more detailed view of each day. Only severe anomalies are shown. And eventually a list of possible causes should be added (this is the last thing to do).</li>
+            <li>I also got the overall view done and the rest of the command line args completed. Overall, the only thing that is left to do is a final objective in the contract to have a list and log of causes for certain types of anomalies. I don't have a lot of time and I'm not finding a lot on the research of that. I will continue working on this last portion.</li>
+          </ul>
+          <p><u>2020-04-01</u></p>
+          <ul>
+            <li>Today I finished the anomaly logs and the anomaly reasons. The anomaly reasons don't work nearly as well as I was anticipating since there is not concrete way to show what event happened in the past. There was also very little data in my research that talked about anything network traffic related that wasn't super high traffic or no traffic, so there is no given reason when those types of data points are hit.</li>
+            <li>This also brings me to the point where there are now multiple severities of anomaly based on how far above the std dev line the data point resides. Those new levels are now reported and recorded while in anomaly list view.</li>
+            <li>I also took the time to finish commenting out the code, making it look presentable and readable. The code is complete and a readme has been constructed.</li>
+            <li>The Capstone project is complete to the best of my abilities in the time that I was given.</li>
+          </ul>
+        </section>
+
+        <hr class="divider">
+
+        <section id="final">
+          <h2>Final Product</h2>
+          <p>The actual code and software project are located on my GitHub account. <a href="https://github.com/tybayn/guardplot" target="_blank"> tybayn/guardplot</a></p>
+        </section>
+
+        <hr class="divider">
+
+        <section id="demo">
+          <h2>Video Demo</h2>
+          <iframe width="1120" height="660" src="https://www.youtube.com/embed/riOgkgJ9jdo" title="Ty Bayn Capstone Project (SUU 2020)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <hr class="divider">
+
+        <section id="reflection">
+          <h2>Reflection</h2>
+          <p>The goal was to write software that could go through historical logs and find inconsistencies and anomalies in the data and report on those. This project was actually quite difficult, and it pushed me to many different limits, and forced me to go beyond those. Almost the entire project as a whole was made of new material for me. I had to learn: Python3, Linux command line, big data analysis, and data science. But it also utilized skills I have learned during my time in school such as advanced algorithms, object-oriented programming, data bases/json, and patterns-based programming to name a few.</p>
+          <p>Overall, I really enjoyed this project. I appreciate how far the project pushed me and my skills and forced me to learn more. I have learned many valuable lessons and skills that I would not have been able to learn before. This project was the perfect display of everything I have learned during my time in school, and I feel that it truly is the Capstone of my degree.</p>
+        </section>
+		  
+		  <hr class="divider">
+		  
+          <h3 id="v1-0">Version 1.0 <small class="text-muted">(1 April, 2020)</small></h3>
+          <p>Initial Release</p>
+        </section>        
+        
+      </div>
+    </div>
+	
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================ -->
+  <footer id="footer" class="section bg-dark footer-text-light">
+    <div class="container">
+      <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+        <li><a data-toggle="tooltip" href="https://twitter.com/harnishdesign/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a data-toggle="tooltip" href="http://www.facebook.com/harnishdesign/" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a data-toggle="tooltip" href="http://www.dribbble.com/harnishdesign/" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+        <li><a data-toggle="tooltip" href="http://www.github.com/" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+      </ul>
+      <p class="text-center">Copyright &copy; 2020 <a href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">iDocs</a>. All Rights Reserved.</p>
+	  <p class="text-2 text-center mb-0">Design &amp; Develop by <a class="btn-link" target="_blank" href="http://www.harnishdesign.net/">HarnishDesign</a>.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back To Top --> 
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- JavaScript
+============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Highlight JS -->
+<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+<!-- Easing --> 
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
